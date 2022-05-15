@@ -37,7 +37,7 @@ body {
   padding: 40px;
 }
 
-.txtPerfil {
+.perfil {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@ body {
   height: 200px;
 }
 
-.txtPerfil .imagem img {
+.perfil .imagem img {
   position: absolute;
   top: 0;
   left: 0;
@@ -63,7 +63,7 @@ body {
   object-fit: cover;
 }
 
-.txtPerfil h2 {
+.perfil h2 {
   color: #ffffff;
   font-size: 1.4rem;
   margin-top: 20px;
@@ -73,7 +73,42 @@ body {
   line-height: 2rem;
 }
 
-.txtPerfil h2 span {
+.perfil h2 span {
   font-size: 0.8em;
   font-weight: 300;
+}
+
+.contato {
+  padding-top: 40px;
+}
+
+.titulo {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contato ul {
+  position: relative;
+}
+
+.contato ul li {
+  list-style: none;
+  position: relative;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.contato ul li .icone {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+
+.contato ul li .texto {
+  font-size: 12px;
+  color: #ffffff;
 }
