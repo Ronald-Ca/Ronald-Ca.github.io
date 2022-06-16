@@ -142,3 +142,102 @@ body {
   height: 100%;
   background: #03a9f4;
 }
+
+.caixa .lado-direito {
+  position: relative;
+  background: #ffffff;
+  padding: 40px;
+}
+
+.sobre {
+  margin-bottom: 50px;
+}
+
+.sobre:last-child {
+  margin-bottom: 0;
+}
+
+.segundo-titulo {
+  margin-bottom: 10px;
+  color: #0d0e0f;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sobre p {
+  color: #242424;
+}
+
+.skill .habilidades {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill .habilidades h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #4f4f4f;
+}
+
+.skill .habilidades .nivel {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #c0c0c0;
+}
+
+.skill .habilidades .nivel div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.interesse ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.interesse ul li {
+  list-style: none;
+  color: #333333;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.interesse li .fa {
+  color: #03a9f4;
+  font-size: 18px;
+  width: 20px;
+  margin: 0 5px 0 0;
+}
+
+@media (max-width: 1000px) {
+  .caixa {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .interesse ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre .caixa {
+    flex-direction: column;
+  }
+  .interesse ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skill .habilidades {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skill .habilidades .nivel {
+    height: 7px;
+  }
+}
